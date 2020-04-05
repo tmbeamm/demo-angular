@@ -1,0 +1,17 @@
+<div class="row">
+  <form [formGroup]="createParamGroup" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline">
+      <mat-label>Param Group</mat-label>
+      <input matInput placeholder="Param Group" formControlName="paramGroup">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Param TH</mat-label>
+      <input matInput placeholder="Param TH" formControlName="paramThDescription">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Param EN</mat-label>
+      <input matInput placeholder="Param EN" formControlName="paramEnDescription">
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </form>
+</div>
